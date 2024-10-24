@@ -125,19 +125,25 @@
         return num;
     }
 
-    cases = ['broom2', 'cut-lemon1', 'torchocolate', 'hand1-dense-v2']
+    cases = [ 'torchocolate', 'hand1-dense-v2', 'broom2', 'cut-lemon1',]
     // numbers = [415, 173]
 
 
     for (var c = 0; c < cases.length; c++) {
         dataset = cases[c]
+        if (dataset === 'broom2'){
+            max_len = 15
+        }
+        else{
+            max_len = 30
+        }
 
         document.write(
         `<section class="section">
     <div class="container is-max-desktop" id="compare">`
     )
 
-        for (var i = 0; i < 30; i++) {
+        for (var i = 0; i < max_len; i++) {
             document.write(
                 `
                 <div class="rows is-centered has-text-centered">
