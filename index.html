@@ -202,7 +202,7 @@
             <p>pass</p>
           </div>
         </div>
-        <hr>
+        <hr />
 
         <div class="columns is-centered has-text-centered">
           <img src="images/framework.png" width="100%" />
@@ -220,16 +220,15 @@
         <div class="columns">
           <div class="content">
             <p>
-              In addition to the conventional reconstruction structures, which
-              include the canonical space and the deformation field
-              <font color="red">(first row)</font>, we incorporate the
-              TimeFormer module to capture multi-temporal relationships and
-              explore motion patterns in the whole time series
-              <font color="red">(second row)</font>.<br />
-              Moreover, we employ shared weights for the deformation fields in
-              both branches to distill the learned motion patterns. This allows
-              us to <u>exclude the Auxiliary Training Module</u> during the
-              inference stage, thereby maintaining the standard rendering speed.
+              Existing 4D Gaussian framework usually includes the canonical
+              space and the deformation field (<font color="red">first row</font>), we incorporate the
+              TimeFormer module to capture multi-temporal relationships and explore
+              motion patterns in the whole time series (<font color="red">second row</font>). <br>
+              We share
+              weights of the deformation fields in both branches to distill the
+              learned motion information. This allows us to exclude this
+              Auxiliary Training Module during the inference stage, thereby
+              maintaining the original rendering speed.
             </p>
           </div>
         </div>
@@ -237,7 +236,6 @@
     </section>
 
     <br /><br />
-    
 
     <section>
       <div class="container is-max-desktop">
@@ -304,16 +302,18 @@
         <div class="columns is-centered has-text-centered"></div>
         <div class="columns is-centered has-text-centered">
           <p>
-            We eliminate the incorrect motion (flickering red area) caused by the specular
-            reflection on <u>the right window</u>, and remove <u>artifacts on
-            the background</u>.
+            We eliminate the incorrect motion (flickering red area) caused by
+            the specular reflection on <u>the right window</u>, and remove
+            <u>artifacts on the background</u>.
             <!-- <br> -->
             <!-- Since we normalize each motion map to the heatmap independently, some flickering may occur. -->
           </p>
         </div>
       </div>
     </section>
-    <br /><hr><br />
+    <br />
+    <hr />
+    <br />
 
     <script>
       function pad(num, size = 5) {
@@ -457,7 +457,7 @@
 </section>`
       );
     </script>
-    <hr>
+    <hr />
 
     <!--deformGS HyperNeRF-->
     <script>
@@ -573,8 +573,7 @@
       );
     </script>
 
-<hr>
-
+    <hr />
 
     <!--deformGS NeRF-DS-->
     <script>
